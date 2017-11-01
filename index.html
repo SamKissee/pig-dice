@@ -6,30 +6,28 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
-    <title>Oink! Let's Play Pig Dice</title>
+    <title>Oink! </title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
         <img src="" alt="">
-        <h1 class="display-4">Pig Dice. Are you ready. COMMENCE!</h1>
-        <p class="lead">Rules of the game:.</p>
+        <h1 class="display-4">Pig Dice</h1>
       </div>
-
       <div class="row">
-        <div class="card col-md-6 ">
+        <div id="card" class="card col-md-6 ">
           <div class="card-body">
-            <h4 class="card-title">Player 1</h4>
+            <h2 class="card-title">Player 1</h2>
             <p class="card-text"><span id="playerOneTotal"></span></p>
-            <button id="playerOneSave" type="submit" class="btn btn-info">Save Turn</button>
+            <button id="playerOneSave" type="submit" class="btn btn-warning">Hold</button>
           </div>
         </div>
 
-        <div class="card col-md-6 playerTwoSave">
+        <div id="card" class="card col-md-6 playerTwoSave">
           <div class="card-body">
-            <h4 class="card-title">Player 2</h4>
+            <h2 class="card-title">Player 2</h2>
             <p class="card-text"><span id="playerTwoTotal"></span></p>
-            <button id="playerTwoSave" type="submit" class="btn btn-info">Save Turn</button>
+            <button id="playerTwoSave" type="submit" class="btn btn-warning">Hold</button>
           </div>
         </div>
       </div><!--row-->
@@ -39,12 +37,27 @@
           <div class="rollBusiness">
             <button id="reset" type="submit" class="btn btn-secondary btn-lg">Reset!</button>
             <button id="roll" type="submit" class="btn btn-primary btn-lg">ROLL!</button>
-            <h3>Current roll:</h3>
+            <h3>Current Roll:</h3>
             <p><span id="currentRoll"></span></p>
+            <h3>Roll Total:</h3>
             <p><span id="rollTotal"></span></p>
         </div>
         </div>
         <div class="col-lg-4"></div>
+      </div>
+      <div class="row">
+        <h2>GamePlay:</h2>
+        <hr>
+        <div id="rules" class="card">
+          <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+          <ul>
+            <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+            <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+            <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.The next player must press <strong>'Reset!'</strong> before rolling.</li>
+            <li>The first player to score 100 or more points wins.</li>
+          </ul>
+          <p>For example, the first player, Chris P. Bacon, begins a turn with a roll of 5. Chris P. Bacon could hold and score 5 points, but chooses to roll again. Chris P. Bacon rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again. Chris P. Bacon rolls a 1, and must end their turn without scoring. The next player, Polly Ester, rolls the sequence 4-5-3-5-5, after which they choose to hold, and adds their turn total of 22 points to their score.</p>
+        </div>
       </div>
     </div><!--main container-->
   </body>

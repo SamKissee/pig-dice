@@ -2,3 +2,25 @@
   margin-top: 15px;
   text-align: center;
 }
+#card{
+  background-image: url(poker.jpg);
+  height: 350px;
+  color: white;
+  border: 
+
+}
+#card p {
+  font-size: 3em;
+}
+.col-lg-4 p {
+  font-size: 3em;
+}
+.jumbotron{
+  background-image: url(dice.jpg);
+  color: white;
+}
+
+#rules {
+  padding: 20px;
+
+}

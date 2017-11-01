@@ -1,3 +1,4 @@
+//Back End Logic
 function PlayerOne(score){
   this.score = score
 };
@@ -16,7 +17,8 @@ function add(a, b) {
     return a + b;
 };
 var currentRoll = [0];
-var limbo = [0];
+
+//Front End Logic
 $(document).ready(function() {
   $("#roll").click(function() {
     var rollDice = Math.floor(Math.random() * 6) + 1;
@@ -28,15 +30,15 @@ $(document).ready(function() {
     $("span#currentRoll").show();
     $("span#rollTotal").show();
     $("span#currentRoll").text(rollDice);
-    var save = currentRoll.reduce(add, 0);
-    $("span#rollTotal").text(save);
+    // var save = currentRoll.reduce(add, 0);
+    $("span#rollTotal").text(currentRoll.reduce(add, 0));
 
   });
   $("button#reset").click(function(event) {
     event.preventDefault();
     currentRoll = [];
-    save = [];
-    rollDice = [];
+    // save = [];
+    // rollDice = [];
     $("span#currentRoll").hide();
     $("span#rollTotal").hide();
   });
