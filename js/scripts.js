@@ -25,13 +25,23 @@ $(document).ready(function() {
     } else {
       currentRoll.push(rollDice);
     }
+    $("span#currentRoll").show();
+    $("span#rollTotal").show();
     $("span#currentRoll").text(rollDice);
     var save = currentRoll.reduce(add, 0);
     $("span#rollTotal").text(save);
 
   });
+  $("button#reset").click(function(event) {
+    event.preventDefault();
+    currentRoll = [];
+    save = [];
+    rollDice = [];
+    $("span#currentRoll").hide();
+    $("span#rollTotal").hide();
+  });
  //
-   $("button#playerTwoSave").click(function(event) {
+   $("button#playerOneSave").click(function(event) {
      event.preventDefault();
      var playerOneAdd = playerOne.saveTurn(currentRoll.reduce(add, 0));
      $("span#playerOneTotal").text(playerOne.score);
