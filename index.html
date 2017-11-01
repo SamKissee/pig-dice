@@ -13,15 +13,38 @@
       <div class="jumbotron">
         <img src="" alt="">
         <h1 class="display-4">Pig Dice. Are you ready. COMMENCE!</h1>
-        <p class="lead">Rules of the game: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="lead">Rules of the game:.</p>
       </div>
 
+      <div class="row">
+        <div class="card col-md-6 playerOneSave">
+          <div class="card-body">
+            <h4 class="card-title">Player 1</h4>
+            <p class="card-text"><span id="playerOneTotal"></span></p>
+            <button type="submit" class="btn btn-info">Save Turn</a>
+          </div>
+        </div>
 
-
-
-
-
+        <div class="card col-md-6 playerTwoSave">
+          <div class="card-body">
+            <h4 class="card-title">Player 2</h4>
+            <p class="card-text"><span id="playerTwoTotal"></span></p>
+            <button type="submit" class="btn btn-info">Save Turn</a>
+          </div>
+        </div>
+      </div><!--row-->
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <div class="rollBusiness">
+            <button id="roll" type="submit" class="btn btn-primary btn-lg">ROLL!</button>
+            <h3>Current roll:</h3>
+            <p><span id="currentRoll"></span></p>
+            <p><span id="rollTotal"></span></p>
+        </div>
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
     </div><!--main container-->
-
   </body>
 </html>
