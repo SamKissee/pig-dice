@@ -2,6 +2,8 @@
 
 Pig Dice Game: Sam Kissee and Cat Janowitz; November 1, 2017
 
+view @ https://samkissee.github.io/pig-dice/
+
 #### By Sam Kissee and Cat Janowitz
 
 ## Description
